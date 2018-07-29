@@ -1,0 +1,18 @@
+root = true
+
+[*]
+ident_style = space
+ident_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+inser_final_newline = true;
+
+[*.html]
+ident_size = 4
+
+[*.css]
+ident_size = 4
+
+[*.md]
+trim_trailing_whitespace = false

@@ -1,0 +1,50 @@
+{
+  "name": "react-redux-nightmare-quick-start",
+  "version": "0.1.0",
+  "private": false,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "^0.1.0-11",
+    "cryptr": "^4.0.0",
+    "history": "^4.7.2",
+    "js-cookie": "^2.2.0",
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-day-picker": "^7.1.10",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-responsive-modal": "^3.2.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "react-scripts": "1.1.4",
+    "react-transition-group": "^2.4.0",
+    "redux": "^4.0.0",
+    "redux-immutable-state-invariant": "^2.1.0",
+    "redux-promise-middleware": "^5.1.1",
+    "redux-state": "^1.1.0",
+    "redux-thunk": "^2.3.0",
+    "socket.io-client": "^2.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
+    "eslint-watch": "^4.0.2"
+  },
+  "description": "Small project to quickly and easily start the development with create-react-app, redux, react router and more... ",
+  "main": "src/index.js",
+  "repository": "https://github.com/FranciscoVeracoechea/react-redux-nightmare-quick-start.git",
+  "author": "Francisco Veracoechea <veracoecheafrancisco@gmail.com>>",
+  "license": "MIT"
+}
