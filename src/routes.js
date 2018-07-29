@@ -3,8 +3,8 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 // containers
 import App from './containers/App';
+import HomePage from './containers/HomePageContainer';
 // components
-import HomePage from './components/HomePage';
 
 
 const Routes = () => (
