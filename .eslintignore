@@ -56,3 +56,5 @@ npm-debug.log.*
 __snapshots__
 
 src/registerServiceWorker.js
+
+utils/
