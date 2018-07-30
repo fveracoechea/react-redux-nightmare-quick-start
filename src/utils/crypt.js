@@ -50,6 +50,6 @@ export function deleteCookie(name) {
     document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 };
 
-export function createCookie(name, value, durationDays = 364){
-  document.cookie = cryptr.encrypt(`${name}=${value}; max-age=${durationDays*86400}`);
+export function createCookie(name, value, durationDays = 364, domain = ''){
+  document.cookie = cryptr.encrypt(`${name}=${value}; max-age=${durationDays*86400}; ${(domain)? 'domain=${domain}'} : '';`);
 }
