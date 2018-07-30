@@ -6,8 +6,8 @@ import '../../assets/css/App.css';
 const Home = (props) => {
   const { message, showMessage } = props;
   showMessage(
-    `react-redux-nightmare-quick-start it has predefined a set of configurations
-    of redux react router eslint, font awesome, react-router-redux, in addition to a set of 
+    `it has predefined a set of configurations
+    of redux, react-router, eslint, font-awesome, react-router-redux, in addition to a set of 
     dependencies that are handled frequently in a reactive project`
   );
   return (
@@ -17,6 +17,9 @@ const Home = (props) => {
         <h1 className="App-title">
           Welcome to React
         </h1>
+        <h3>
+          react-redux-nightmare-quick-start
+        </h3>
       </header>
       <p className="App-intro">
         {message}

@@ -12,14 +12,12 @@ const Routes = () => (
     <Switch>
       <Route exact path="/" component={HomePage} />
       <Route
-        path="/hi"
         render={() => (
           <h2>
-            hola bbebe
+            404
           </h2>
         )}
       />
-      <Route component={HomePage} />
     </Switch>
   </App>
 );
