@@ -9,3 +9,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     $ git clone https://github.com/FranciscoVeracoechea/react-redux-nightmare-quick-start.git my-react-redux-project
     $ cd my-react-redux-proyect
     $ npm install
+    $ npm start
