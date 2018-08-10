@@ -51,5 +51,5 @@ export function deleteCookie(name) {
 };
 
 export function createCookie(name, value, durationDays = 364, domain = ''){
-  document.cookie = cryptr.encrypt(`${name}=${value}; max-age=${durationDays*86400}; ${(domain)? 'domain=${domain}'} : '';`);
+  document.cookie = cryptr.encrypt(`${name}=${value}; max-age=${durationDays*86400}; ${(domain) ? `domain=${domain}` : ''};`);
 }

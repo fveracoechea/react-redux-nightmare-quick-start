@@ -21,7 +21,7 @@ const Home = (props) => {
           react-redux-nightmare-quick-start
         </h3>
       </header>
-      <p className="App-intro">
+      <p className="App-intro" style={{ margin: '80px' }}>
         {message}
       </p>
     </div>

@@ -14,5 +14,11 @@ ident_size = 4
 [*.css]
 ident_size = 4
 
+[*.scss]
+ident_size = 4
+
+[*.sass]
+ident_size = 4
+
 [*.md]
 trim_trailing_whitespace = false
