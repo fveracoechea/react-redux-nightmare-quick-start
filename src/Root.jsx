@@ -1,11 +1,11 @@
 // dependencies
 import React from 'react';
 import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'react-router-redux';
+import { ConnectedRouter } from 'connected-react-router';
 // routes
-import Routes from '../routes';
+import Routes from './routes';
 // global styles
-import '../assets/css/Root.css';
+import './assets/css/Root.css';
 
 
 const Root = (props) => {

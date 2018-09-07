@@ -1,6 +1,5 @@
 // dependecies
 import queryString from './queryString';
-import { getBearer } from './crypt';
 
 
 export const API = {
@@ -22,7 +21,6 @@ export function apiOptions(options = {}){
     headers = {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
-      'Authorization': getBearer()
     },
     body = false
   } = options,
@@ -59,7 +57,6 @@ export function apiSendForm(endpoint, formData = FormData, method = 'POST', quer
     method: method,
     headers: {
       'Accept': 'application/json',
-      'Authorization': getBearer()
   }};
   const getPromise = async () => {
     try {
@@ -80,7 +77,6 @@ export function apiFile(endpoint, file = File){
     method: 'POST',
     headers: {
       'Accept': 'application/json',
-      'Authorization': getBearer()
   }};
   const getPromise = async () => {
     try {

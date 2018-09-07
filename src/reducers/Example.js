@@ -1,5 +1,5 @@
 // actions types
-import { SHOW_MESSAGE_FOR_EXAMPLE } from '../actions/HomePage';
+import { actionTypes } from '../actions/Example';
 
 
 const initialState = {
@@ -8,7 +8,7 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case SHOW_MESSAGE_FOR_EXAMPLE:
+    case actionTypes.SHOW_MESSAGE_FOR_EXAMPLE:
       return {
         ...state,
         message: action.payload.message,

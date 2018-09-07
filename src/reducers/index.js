@@ -1,13 +1,11 @@
 // dependencies
 import { combineReducers } from 'redux';
-import { routerReducer as router } from 'react-router-redux';
-// import reducers...
-import home from './HomePageReducer';
+// reducers...
+import example from './Example';
 
 
 const rootReducer = combineReducers({
-  router,
-  home,
+  example,
 });
 
 export default rootReducer;

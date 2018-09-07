@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { configureStore, history } from './store/configureStore';
-import Root from './containers/Root';
+import Root from './Root';
 import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './reducers';
 
