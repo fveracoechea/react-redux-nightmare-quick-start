@@ -1,5 +1,5 @@
 # react-redux-nightmare-quick-start
-Small project to quickly and easily start the development. it has predefined a set of configurations of redux, react-router, eslint, font-awesome, react-router-redux, in addition to a set of dependencies that are handled frequently in a react project.
+Small project to quickly and easily start the development. it has predefined a set of configurations of redux, react-router, eslint, font-awesome, connected-react-router, in addition to a set of dependencies that are handled frequently in a react project.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
