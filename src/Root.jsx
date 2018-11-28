@@ -6,10 +6,15 @@ import { ConnectedRouter } from 'connected-react-router';
 import Routes from './routes';
 // global styles
 import './assets/css/Root.css';
+// get and listend devices
+import { listenDevices, getDevice } from './utils/device';
+import { getIinitialDevice } from './actions/DeviceActions';
 
 
 const Root = (props) => {
   const { store, history } = props;
+  listenDevices(store);
+  store.dispatch(getIinitialDevice(getDevice));
   return (
     <Provider store={store}>
       <ConnectedRouter history={history}>

@@ -9,6 +9,7 @@
   },
   "rules": {
     "comma-dangle": ["error", "always-multiline"],
+    "camelcase": "off",
     "import/newline-after-import": [
       "error",{ "count": 2 }
     ],
@@ -22,6 +23,7 @@
       "order": ["type-annotations", "static-methods", "lifecycle", "everything-else", "render"]
     }],
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+    "react/forbid-prop-types": "off",
     "no-restricted-properties": [
       "error",{ "property": "lenght" }
     ],

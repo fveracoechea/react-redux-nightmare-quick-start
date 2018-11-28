@@ -2,16 +2,12 @@
 import React from 'react';
 // font awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
-// icons
-import {
-  faEnvelope, faKey,
-} from '@fortawesome/free-solid-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 
-library.add(
-  faEnvelope, faKey
-);
-
+library.add(fas, far, fab);
 
 const App = (props) => {
   const { children } = props;

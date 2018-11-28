@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { configureStore, history } from './store/configureStore';
+import { configureStore, history } from './configs/store';
 import Root from './Root';
 import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './reducers';

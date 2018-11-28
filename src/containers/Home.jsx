@@ -8,6 +8,7 @@ import Home from '../components/Home';
 
 export default connect(state => ({
   message: state.example.message,
+  device: state.device,
 }), {
   ...actions,
 })(Home);

@@ -1,0 +1,8 @@
+{
+  "api": "/api",
+  "baseUrl" : "http://127.0.0.1:3000",
+  "colors": {
+    "danger": "#db2e4e",
+    "light": "#e2e2e2"
+  }
+}

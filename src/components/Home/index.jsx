@@ -13,7 +13,7 @@ class Home extends Component {
   componentDidMount() {
     const { showMessage } = this.props;
     showMessage(`it has predefined a set of configurations
-    of redux, react-router, eslint, font-awesome, react-router-redux, in addition to a set of 
+    of redux, react-router, eslint, font-awesome, react-router-redux, in addition to a set of
     dependencies that are handled frequently in a reactive project`);
   }
 
@@ -28,7 +28,7 @@ class Home extends Component {
   }
 
   render() {
-    const { message } = this.props;
+    const { message, device: { currentDevice, isTouch } } = this.props;
     return (
       <div className="App">
         <header className="App-header">
@@ -42,6 +42,16 @@ class Home extends Component {
         </header>
         <p className="App-intro" style={{ margin: '80px' }}>
           {message}
+        </p>
+        <p>
+          Device:
+          &nbsp;
+          { currentDevice }
+        </p>
+        <p>
+          Touch:
+          &nbsp;
+          { isTouch.toString() }
         </p>
         <button
           onClick={this.handleOnClick}
@@ -60,5 +70,6 @@ class Home extends Component {
       </div>
     );
   }
-};
+}
+
 export default Home;
