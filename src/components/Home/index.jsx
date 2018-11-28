@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import logo from '../../assets/img/logo.svg';
 import '../../assets/css/App.css';
 
@@ -11,7 +11,8 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    const { showMessage } = this.props;
+    const { showMessage, fetchMovie } = this.props;
+    fetchMovie();
     showMessage(`it has predefined a set of configurations
     of redux, react-router, eslint, font-awesome, react-router-redux, in addition to a set of
     dependencies that are handled frequently in a reactive project`);
@@ -28,7 +29,9 @@ class Home extends Component {
   }
 
   render() {
-    const { message, device: { currentDevice, isTouch } } = this.props;
+    const {
+      message, device: { currentDevice, isTouch }, loading, movie,
+    } = this.props;
     return (
       <div className="App">
         <header className="App-header">
@@ -67,6 +70,33 @@ class Home extends Component {
         >
           go to 404
         </button>
+        {
+          (movie.message)
+            ? <p>{message}</p>
+            : null
+        }
+        {
+          (loading)
+            ? <p>loading movie...</p>
+            : (
+              <Fragment>
+                <hr />
+                <h4>{movie.Title}</h4>
+                <p>
+                  Actors:
+                  {movie.Actors}
+                </p>
+                <p>
+                  Director:
+                  {movie.Director}
+                </p>
+                <p>
+                  Production:
+                  {movie.Production}
+                </p>
+              </Fragment>
+            )
+        }
       </div>
     );
   }
